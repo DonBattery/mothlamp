@@ -2,10 +2,34 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/donbattery/kkhcli"
+  packages = ["utils"]
+  revision = "732f21abc77f69e5a359ceb07b20eb2276dd94f5"
+
+[[projects]]
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
   revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
   version = "v1.4.7"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/go-http-utils/logger"
+  packages = ["."]
+  revision = "f3a42dcdeae6e445c9e986b7fda289d98db10414"
+
+[[projects]]
+  name = "github.com/gorilla/context"
+  packages = ["."]
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
+
+[[projects]]
+  name = "github.com/gorilla/mux"
+  packages = ["."]
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [[projects]]
   name = "github.com/hashicorp/hcl"
@@ -36,6 +60,12 @@
   packages = ["."]
   revision = "c01d1270ff3e442a8a57cddc1c92dc1138598194"
   version = "v1.2.0"
+
+[[projects]]
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [[projects]]
   name = "github.com/spf13/afero"
@@ -94,6 +124,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6f63b94e8c04461e2605dd6103d355c17b54bd97fa6dd71a87ba027bf6d03165"
+  inputs-digest = "4a28b8e24988f4e054e34c257ed742ae4e28721198431a2c395ee148c81d0037"
   solver-name = "gps-cdcl"
   solver-version = 1
