@@ -19,12 +19,10 @@ func Run() {
 	router.NotFoundHandler = custom404()
 
 	router.Use(authCheck)
-
-	router.HandleFunc("/", welcome).Methods("GET")
-	// File upload handler matches for /drive and /drive/ too
-	router.HandleFunc("/{drive:drive\\/?}", uploadFile).Methods("POST")
-	// This is a very important line, this make the server to actually serve the statis folder
-	router.PathPrefix("/drive/").Handler(http.StripPrefix("/drive/", http.FileServer(http.Dir(viper.GetString("MOTHLAMP_DIR"))))).Methods("GET")
+	// Serve the static folder
+	router.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir(viper.GetString("MOTHLAMP_DIR"))))).Methods("GET")
+	// Serve POST requests
+	router.HandleFunc("/", uploadFile).Methods("POST")
 
 	fmt.Printf("\nMothlamp server listening on PORT %v\n", viper.GetInt("MOTHLAMP_PORT"))
 
