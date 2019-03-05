@@ -1,1 +1,3 @@
-this is a feature
+New feature
+mid commit
+last commit
