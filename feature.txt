@@ -7,3 +7,5 @@ mid commit
 
 New feature 3
 mid commit
+
+New feature 4
