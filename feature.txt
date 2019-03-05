@@ -12,3 +12,4 @@ New feature 4
 mid commit
 
 New Feature 5
+mid commit
