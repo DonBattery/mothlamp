@@ -16,3 +16,4 @@ mid commit
 
 new feature 6
 mid commit
+final commit
