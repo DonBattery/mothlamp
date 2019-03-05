@@ -13,3 +13,7 @@ mid commit
 
 New Feature 5
 mid commit
+
+new feature 6
+mid commit
+final commit
