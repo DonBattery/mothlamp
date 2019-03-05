@@ -4,3 +4,5 @@ last commit
 
 New feature 2
 mid commit
+
+New feature 3
